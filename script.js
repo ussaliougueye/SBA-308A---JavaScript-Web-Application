@@ -1,5 +1,10 @@
 import { populateCityList } from './functions.js';
 
+setTimeout(() => {
+  alert("Check the weather of any city in the world");
+}, 2000);
+
+
 window.onload = function() {
   populateCityList();
 };
@@ -42,6 +47,7 @@ document.getElementById("cityy").addEventListener("change", (event) => {
   
   getWeather(lat, lon, apiKey);
 });
+
 
 
 
